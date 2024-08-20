@@ -30,6 +30,9 @@ body{
 	z-index: 100;
 	height: 90px;
 }
+.header.sticky{
+	border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
 a.logo{
 	text-decoration: none;
 	color: white;
@@ -51,7 +54,8 @@ a.logo{
 	opacity: 0;
 }
 
-.navbar>a:hover{
+.navbar>a:hover,
+.navbar>a.active{
 	color: #0ef;
 }
 #img{
@@ -370,8 +374,8 @@ p{
 	padding-top: 20px;
 }.blow{
 	position: relative;
-	left: 140px;
-	bottom: 20px;
+	left: 115px;
+	bottom: 40px;
 }
 .porfolio{
 	height: 100vh;
@@ -393,7 +397,7 @@ p{
 	gap: 27px;
 	align-items: center;
 	width: 87%;
-/*	height: 70%;*/
+	/* height: 70%; */
 	margin: 0 auto;
 	position: relative;
 	top: 85px;
@@ -434,10 +438,10 @@ p{
 	transform: translateY(0);
 }
 .portfolio-bx-1 h4{
-	font-size: 3rem;
+	font-size: 2.3rem;
 }
 .portfolio-bx-1 p{
-	font-size: 1.6em;
+	font-size: 1em;
 	padding-top: 0;
 	margin: .3em 0 1em;
 }
